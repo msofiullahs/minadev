@@ -7,8 +7,10 @@
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
         <!-- Scripts -->
         @routes
@@ -17,5 +19,8 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
+        <script src="{{asset('assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+        {{-- <script src="{{asset('assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script> --}}
+        <script src="{{asset('assets/js/material-kit.min.js')}}" type="text/javascript"></script>
     </body>
 </html>
